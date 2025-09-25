@@ -1,0 +1,142 @@
+.mipart-cont{
+  max-width: 1200px;
+}
+.container-subtitle{
+  font-size: 21px;
+  font-weight: 400;
+  color: rgba(141, 141, 141, 1);
+  margin-top: 150px;
+  margin-bottom: 15px;
+  font-family: "Tregular",sans-serif;
+}
+.container-title{
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.testimonials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-buttons button {
+  margin-left: 10px;
+  padding: 13px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(83, 106, 138, 1);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 25px;
+}
+
+.nav-buttons button:hover:not(:disabled) {
+  background: rgba(223, 223, 223, 1);
+}
+
+.nav-buttons button:disabled {
+  background: rgba(223, 223, 223, 1);
+  cursor: not-allowed;
+}
+
+.testimonials-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* desktopda 2ta */
+  gap: 20px;
+}
+
+.testimonial-card {
+  background: rgba(248, 248, 248, 1);
+  padding: 40px 30px;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.testimonial-card>div{
+  display: flex;
+  gap: 26px;
+  margin: 10px 0;
+}
+.tes-items-img{
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+}
+.testimonial-card img{
+  width: 100%;
+  
+}
+.testimonial-card h2{
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(31, 41, 55, 1);
+}
+.testimonial-card h3{
+  font-weight: 400;
+  color: rgba(110, 110, 110, 1);
+  font-size: 15px;
+  line-height: 22px;
+}
+.testimonial-card p{
+  font-weight: 450;
+  font-size: 15px;
+  margin-top: 20px;
+  color: rgba(33, 33, 33, 1);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Mobile uchun 1ta */
+@media (max-width: 600px) {
+  .tes-items-img{
+  width: 60px;
+  height: 60px;
+  padding: 0px 10px;
+}
+.container-subtitle{
+  font-size: 15px;
+  margin-top: 100px;
+}
+.container-title{
+  font-size: 21px;
+}
+.testimonial-card p{
+  font-size: 13px;
+}
+
+  .testimonials-items {
+    grid-template-columns: 1fr;
+  }
+  .nav-buttons {
+    display: none; /* tugmalar yashiriladi */
+  }
+
+   .testimonials-items {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    /* scrollbarni yashirish */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .testimonials-items::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+  .testimonial-card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    padding: 20px;
+  }
+}

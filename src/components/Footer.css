@@ -1,0 +1,118 @@
+footer{
+    background-color: rgba(31, 41, 55, 1);
+    padding: 40px 0 20px 0;
+    margin-top: 170px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+}
+.footer-layer{
+    height: 6px;
+    width: 116px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.footer-text1{
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(220, 220, 220, 1);
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-family: "Tregular", sans-serif;
+}
+.footer-section>div{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+.footer-section h3{
+    font-size: 16px;
+    color: rgba(207, 207, 207, 1);
+    font-weight: 400;
+   
+}
+.footer-section p{
+    margin-top: 9px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.foter-layer2{
+    height: 130px;
+    width: 1px;
+    background-color: rgba(17, 26, 37, 1);
+    
+}
+.contact-tel, .contact-pozition{
+    background-color: rgba(107, 114, 128, 1);
+    padding:12px 25px;
+    border-radius: 100px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+
+}
+.contact-pozition{
+    position: relative;
+    padding-left: 50px;
+}
+.footer-contact>p{
+    font-size: 17px;
+    color: rgba(255, 255, 255, 1);
+
+}
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-contact>div{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+   
+}
+.footer-contact i{
+    position: absolute;
+    left: 8px;
+    color: rgba(107, 114, 128, 1);
+    font-size: 20px;
+    padding: 5px 6px 5px 4px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+}
+.footer-bottom-tex{
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(207, 207, 207, 1);
+    text-align: center;
+}
+
+@media(max-width: 600px) {
+    .footer{
+        align-items: start;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-section>div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .foter-layer2{
+        display: none;
+    }
+    .footer-contact{
+        align-items: start;
+        
+    }
+    .footer-contact>div{
+        flex-direction: column;
+        align-items: start;
+    }
+}

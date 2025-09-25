@@ -1,0 +1,145 @@
+.uni-container {
+  margin-top: 70px;
+}
+
+.uni-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.uni-title {
+  font-size: 21px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.uni-nav button {
+  margin-left: 10px;
+  padding: 13px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(83, 106, 138, 1);
+  color: #fff;
+  cursor: pointer;
+  font-size: 25px;
+  transition: background 0.2s;
+}
+
+.uni-nav button:hover:not(:disabled) {
+  background: rgba(223, 223, 223, 1);
+}
+
+.uni-nav button:disabled {
+  background: rgba(223, 223, 223, 1);
+  cursor: not-allowed;
+}
+
+.uni-line {
+  height: 18px;
+  background-color: rgba(238, 238, 238, 1);
+  margin: 16px 0 35px 0;
+}
+
+/* Desktop ( >600px ) – tugmalar ishlaydi, scroll yo‘q */
+.uni-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.uni-card {
+  border-radius: 10px;
+  text-align: left;
+  background: #fff;
+}
+
+.uni-img {
+  width: 100%;
+  height: 348px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.uni-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.uni-card-title {
+  margin: 22px 0;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  font-family: "Tregular", sans-serif;
+}
+
+.uni-card-body {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 29px;
+}
+
+.uni-card-body p {
+  font-size: 17px;
+  color: rgba(99, 99, 99, 1);
+  line-height: 25px;
+  font-family: "Tregular", sans-serif;
+}
+
+.uni-btn {
+  background: rgba(246, 246, 246, 1);
+  color: rgba(0, 0, 0, 1);
+  border: none;
+  padding: 1px 40px;
+  border-radius: 100px;
+  font-size: 18px;
+  font-family: "Tregular", sans-serif;
+  cursor: pointer;
+}
+
+.uni-date {
+  font-size: 16px;
+  color: rgba(99, 99, 99, 1);
+  font-weight: 400;
+  font-family: "Tregular", sans-serif;
+}
+
+.uni-date span {
+  color: rgba(51, 51, 51, 1);
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .uni-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  .uni-nav {
+    display: none; /* Mobileda buttonlar yashiriladi */
+  }
+  
+  .uni-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+
+  }
+  .uni-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  
+  .uni-card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+  
+  
+}

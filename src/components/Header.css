@@ -1,0 +1,203 @@
+header{
+    background-color: rgba(10, 10, 11, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 20px 0;
+    font-family: "FontOne";
+    
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-contact{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header>button{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+    background-color: rgba(28, 28, 28, 1);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    display: none;
+}
+.header-contact i, .hide-contact i{
+    color: white;
+    font-size: 14px;
+    padding: 4px;
+    font-weight: 300;
+    border-radius: 50%;
+    background-color: rgba(83, 106, 138, 1);
+}
+.header-contact button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgba(28, 28, 28, 1);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.header-contact h4, .hide-contact h4{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.header-contact>div{
+    margin-top: 18px;
+}
+
+.header-logo{
+    max-width: 120px;
+    cursor: pointer;
+     filter: brightness(1.6); 
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+li {
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+   
+}
+.header a{
+     text-transform: uppercase;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 0px solid transparent;
+    text-decoration: none;
+
+}
+.language-icon, .menu{
+    max-width: 50px;
+    border-radius: 8px;
+}
+.mobile-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 400px;
+  background: #000;
+  color: #fff;
+  z-index: 1000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  /* boshlang'ich animatsiya */
+  transform: scale(0);
+  transform-origin: top right;
+  /* border-radius: 50%; */
+  /* animation: growCircle 0.4s ease forwards; */
+  animation: slideDown 0.4s ease forwards;
+}
+/* 
+@keyframes growCircle {
+  0% {
+    transform: scale(.1);
+    border-radius: 50%;
+  }
+ 
+  100% {
+    transform: scale(1);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;    
+  }
+} */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;  
+  }
+}
+
+.mobile-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 15px;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0 20px;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+}
+.hide-contact{
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-top: 1px solid rgba(43, 43, 43, 1);
+}
+
+/* faqat mobil uchun */
+@media (min-width: 601px) {
+  .mobile-modal {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+    .header{
+      flex-direction: row-reverse;
+    }
+    .header>button{
+      display: flex;
+    }
+    .header-contact {
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+    .header-nav{
+        display: none;
+    }
+    .header-contact>div{
+        display: none;
+    }
+    .header-logo {
+        max-width: 120px;
+        margin-bottom: 10px;
+        max-width: 90px;
+    }
+}

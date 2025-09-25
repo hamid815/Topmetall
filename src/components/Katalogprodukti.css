@@ -1,0 +1,89 @@
+.kat-produkti-top{
+    background-color: rgba(31, 41, 55, 1);
+}
+.kat-produkti-top h1{
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    padding: 40px 0;
+}
+.katalog-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 60px 0;
+}
+.katalog-item{
+    position: relative;
+    /* max-width: 414px;
+    max-height: 335px; */
+    width: 100%;
+    height: 335px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.katalog-content{
+    position: absolute;
+    bottom: 16px;
+    left: 19px;
+    right: 0;
+    
+    color: #fff;
+}
+.katalog-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+.katalog-label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(20, 35, 56, 0.54);
+    color: #fff;
+    padding: 15px;
+    height: 140px;
+     
+
+    
+}
+.katalog-content p{
+    font-weight: 500;
+    font-size: 21px;
+    margin: 12px 0;
+
+}
+.katalog-content button{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(31, 41, 55, 1);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+
+}
+
+@media(max-width: 600px) {
+    .kat-produkti-top h1{
+        font-size: 19px;
+    }
+    .katalog-content p{
+        font-size: 19px;
+    }
+    .katalog-content button{
+        font-size: 14px;
+    }
+    .katalog-grid{
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 30px 0;
+    }
+}

@@ -1,0 +1,160 @@
+.app-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 120px;
+    font-family: "Tregular", sans-serif;
+
+}
+.appform-left{
+    background-color: rgba(31, 41, 55, 1);
+    padding: 20px;
+    width: 50%;
+    border-radius: 6px;
+
+}
+.appform-left h5, .appform-right h5{
+    color: rgba(174, 174, 174, 1);
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.appform-left h2{
+    font-size: 32px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    margin: 10px 0;
+    font-family: "Tmedium",sans-serif;
+}
+.appform-left p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(174, 174, 174, 1);
+    margin-bottom: 30px;
+}
+.appform-inputs{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+.app-form input{
+    background-color: rgba(23, 30, 41, 1);
+    color: rgba(213, 213, 213, 1);
+    padding:20px;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: none;
+    margin: 10px 0;
+}
+.app-form input:active{
+    outline: none;
+    border: none;
+}
+.appform-button{
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 25px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    font-family: "Tdemibold", sans-serif;
+}
+/* Right */
+
+.appform-right{
+    width: 50%;
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 6px;
+    padding: 20px;
+}
+.appform-right h2{
+    font-size: 32px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-family: "Tmedium",sans-serif;
+
+}
+
+.appform-right>   p{
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(107, 114, 128, 1);
+    margin-bottom: 30px;
+   
+}
+.appform-right h3{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 35px;
+    color: rgba(55, 65, 81, 1);
+}
+.appform-right>div{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 40px;
+}
+.appform-right>div>p{
+    background-color: rgba(31, 41, 55, 1);
+    padding:12px 20px;
+    border-radius: 100px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.appform-right i{
+    color: rgba(31, 41, 55, 1);
+    padding: 5px 6px 5px 4px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+@media(max-width: 600px) {
+    .app-form{
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 60px;
+    }
+    .appform-left, .appform-right{
+        width: 100%;
+    }
+    .appform-inputs{
+        flex-direction: column;
+    }
+    .appform-left h5, .appform-right h5{
+        font-size: 15px;
+    }
+    .appform-left h2, .appform-right h2{
+        font-size: 25px;
+    }
+    .appform-left p, .appform-right p{
+        font-size: 15px;
+        margin-bottom: 16px;
+    }
+    .appform-button{
+        font-size: 15px;
+        padding: 15px 30px;
+    }
+    .app-form input{
+        font-size: 17px;
+        margin: 5px 0;
+    }
+    .appform-right h3{
+        font-size: 21px;
+    }
+    .appform-right>div{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+    }
+}
