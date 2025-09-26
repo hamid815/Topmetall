@@ -99,6 +99,8 @@
   font-size: 18px;
   font-family: "Tregular", sans-serif;
   cursor: pointer;
+  max-height: 50px;
+  
 }
 
 .uni-date {
@@ -115,6 +117,9 @@
 
 /* Mobile */
 @media (max-width: 600px) {
+  .uni-btn{
+    padding: 14px ;
+  }
   .uni-wrapper {
     grid-template-columns: 1fr;
   }
@@ -135,11 +140,16 @@
   .uni-wrapper::-webkit-scrollbar {
     display: none; /* Chrome, Safari */
   }
-  
+  .uni-card-body{
+
+    display: flex;
+    flex-direction: column;
+  }
   .uni-card {
     flex: 0 0 100%;
     scroll-snap-align: start;
   }
+  
   
   
 }
