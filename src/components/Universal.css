@@ -54,7 +54,6 @@
   border-radius: 4px;
   text-align: left;
   padding: 16px 13px;
-  background-color: rgba(239, 239, 239, 1);
 }
 
 .uni-img {
@@ -97,12 +96,15 @@
   background: rgba(246, 246, 246, 1);
   color: rgba(0, 0, 0, 1);
   border: none;
-  padding: 1px 40px;
   border-radius: 100px;
   font-size: 18px;
   font-family: "Tregular", sans-serif;
   cursor: pointer;
-  max-height: 50px;
+  width: 140px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
 }
 
@@ -154,6 +156,8 @@
   .uni-card {
     flex: 0 0 100%;
     scroll-snap-align: start;
+  background-color: rgba(239, 239, 239, 1);
+
   }
   .uni-card-title{
     margin-top: 25px;

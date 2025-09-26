@@ -82,18 +82,18 @@ const Okompani = () => {
           <h3 className="container-subtitle">{t("okompani.partners.subtitle")}</h3>
           <h2 className="container-title">{t("okompani.partners.title")}</h2>
           <div className="kom-partnyori-list">
-            <div className="kom-partnyori-item"><img src={Kp1} alt="Partner 1" /></div>
-            <div className="kom-partnyori-item"><img src={Kp2} alt="Partner 2" /></div>
-            <div className="kom-partnyori-item"><img src={Kp3} alt="Partner 3" /></div>
-            <div className="kom-partnyori-item"><img src={Kp4} alt="Partner 4" /></div>
-            <div className="kom-partnyori-item"><img src={Kp5} alt="Partner 5" /></div>
-            <div className="kom-partnyori-item"><img src={Kp6} alt="Partner 6" /></div>
-            <div className="kom-partnyori-item"><img src={Kp7} alt="Partner 7" /></div>
-            <div className="kom-partnyori-item"><img src={Kp8} alt="Partner 8" /></div>
-            <div className="kom-partnyori-item"><img src={Kp9} alt="Partner 9" /></div>
-            <div className="kom-partnyori-item"><img src={Kp10} alt="Partner 10" /></div>
-            <div className="kom-partnyori-item"><img src={Kp11} alt="Partner 11" /></div>
-            <div className="kom-partnyori-item"><img src={Kp12} alt="Partner 12" /></div>
+            <div className="kom-partnyori-item"><img src={Kp1} alt="Partner 1" className="kompani-img" /></div>
+            <div className="kom-partnyori-item"><img src={Kp2} alt="Partner 2" className="kompani-img" /></div>
+            <div className="kom-partnyori-item"><img src={Kp3} alt="Partner 3" className="kompani-img" /></div>
+            <div className="kom-partnyori-item"><img src={Kp4} alt="Partner 4" className="kompani-img katta-rasm" /></div>
+            <div className="kom-partnyori-item"><img src={Kp5} alt="Partner 5" className="kompani-img katta-rasm"  /></div>
+            <div className="kom-partnyori-item"><img src={Kp6} alt="Partner 6" className="kompani-img" /></div>
+            <div className="kom-partnyori-item"><img src={Kp7} alt="Partner 7" className="kompani-img katta-rasm" /></div>
+            <div className="kom-partnyori-item"><img src={Kp8} alt="Partner 8" className="kompani-img" /></div>
+            <div className="kom-partnyori-item"><img src={Kp9} alt="Partner 9" className="kompani-img katta-rasm" /></div>
+            <div className="kom-partnyori-item"><img src={Kp10} alt="Partner 10" className="kompani-img katta-rasm" /></div>
+            <div className="kom-partnyori-item"><img src={Kp11} alt="Partner 11" className="kompani-img katta-rasm" /></div>
+            <div className="kom-partnyori-item"><img src={Kp12} alt="Partner 12" className="kompani-img katta-rasm" /></div>
           </div>
         </div>
       </div>
