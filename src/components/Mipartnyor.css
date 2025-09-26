@@ -58,7 +58,7 @@
 }
 .testimonial-card>div{
   display: flex;
-  gap: 26px;
+  gap: 10px;
   margin: 10px 0;
 }
 .tes-items-img{
@@ -70,36 +70,40 @@
   background-color: #fff;
   padding: 15px;
   border-radius: 50%;
+    flex-shrink: 0;
+
 }
 .testimonial-card img{
   width: 100%;
   
 }
 .testimonial-card h2{
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 500;
   color: rgba(31, 41, 55, 1);
 }
 .testimonial-card h3{
   font-weight: 400;
   color: rgba(110, 110, 110, 1);
-  font-size: 15px;
+  font-size: 14px;
   line-height: 22px;
+  margin-top: 8px;
 }
 .testimonial-card p{
   font-weight: 450;
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 20px;
   color: rgba(33, 33, 33, 1);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-family: "Tregular",sans-serif;
 }
 
 /* Mobile uchun 1ta */
 @media (max-width: 600px) {
   .tes-items-img{
-  width: 60px;
-  height: 60px;
-  padding: 0px 10px;
+  width: 80px;
+  height: 80px;
+  padding: 8px;
+  
 }
 .container-subtitle{
   font-size: 15px;

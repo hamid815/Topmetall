@@ -91,7 +91,7 @@ const Header = () => {
 
           <div className="hide-contact">
             <div>
-              <h4>
+              <h4 className="hide-cont">
                 <i className="bx bxs-phone"></i> +998 90 186 30 93
               </h4>
               <h4>{t("contact.email")}: topmetpro@gmail.com</h4>

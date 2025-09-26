@@ -118,6 +118,10 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 1);
 }
+.app-form-tg{
+    display: flex;
+    gap: 8px;
+}
 
 @media(max-width: 600px) {
     .app-form{

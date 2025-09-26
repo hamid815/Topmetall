@@ -75,7 +75,7 @@ const Appform = () => {
           <h3>{t("appform.right.address")}</h3>
           <div>
             <p>{t("appform.right.phone")}</p>
-            <p>
+            <p className="app-form-tg">
               <i className="bx bxl-telegram"></i> {t("appform.right.telegram")}
             </p>
           </div>
