@@ -40,10 +40,12 @@ function App() {
             <Appform/>
             <Footer/> */}
 
-      <Router>
+      <Router basename="/">
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/uz" element={<Main />} />
+
           <Route path="/okompani" element={<Okompani />} />
           <Route path="/realproyekti" element={<Realproyekti />} />
 
