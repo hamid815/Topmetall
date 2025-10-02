@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import Sidebar from "./Sidebar"; // yangi umumiy sidebar
 import "./Teliobenniki.css";
 import { useTranslation } from "react-i18next";
-
+import { Link } from "react-router-dom";
 import Tello1 from "../assets/tello1.jpg";
 import Tello2 from "../assets/tello2.jpg";
 
@@ -16,8 +16,8 @@ const Telloobenniki = () => {
       <Header />
       <div className="container">
         <h2 className="info-yul">
-          {t("info.back")} <p>→</p>{" "}
-          <span>{t("info.telloobmenniki.title")}</span>
+          <Link to="/">{t("info.back")}</Link>
+          <p>→</p> <span>{t("info.telloobmenniki.title")}</span>
         </h2>
         <div className="more-info">
           {/* Umumiy sidebar */}
@@ -25,8 +25,8 @@ const Telloobenniki = () => {
 
           <div className="info-content">
             <h2>
-              {t("info.back")} <p>→</p>{" "}
-              <span>{t("info.telloobmenniki.title")}</span>
+              <Link to="/">{t("info.back")}</Link>
+              <p>→</p> <span>{t("info.telloobmenniki.title")}</span>
             </h2>
 
             <h1>{t("info.telloobmenniki.title")}</h1>
@@ -44,13 +44,13 @@ const Telloobenniki = () => {
 
             <h3>{t("info.telloobmenniki.types.title")}</h3>
             <div className="info-grid">
-              {t("info.telloobmenniki.types.items", { returnObjects: true }).map(
-                (item, index) => (
-                  <h4 key={index}>
-                    <div className="dot"></div> {item}
-                  </h4>
-                )
-              )}
+              {t("info.telloobmenniki.types.items", {
+                returnObjects: true,
+              }).map((item, index) => (
+                <h4 key={index}>
+                  <div className="dot"></div> {item}
+                </h4>
+              ))}
             </div>
 
             <h3>{t("info.telloobmenniki.tech.title")}</h3>

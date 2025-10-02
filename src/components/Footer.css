@@ -10,9 +10,32 @@ footer{
     color: rgba(255, 255, 255, 1);
 }
 .footer-layer{
-    height: 6px;
-    width: 116px;
+    margin-top: 10px;
+    height: 7px;
+    width: 136px;
     background-color: rgba(255, 255, 255, 1);
+   
+    
+    clip-path: polygon(
+    10px 0,     /* chap tepani kesish */
+    100% 0,     /* yuqori o‘ng */
+    calc(100% - 10px) 100%, /* pastki o‘ng kesilgan joy */
+    0 100%      /* pastki chap */
+  );
+}
+.layer-footer{
+    margin: 6px 30px;
+     height: 7px;
+    width: 136px;
+    background-color: rgba(255, 255, 255, 1);
+   
+    
+    clip-path: polygon(
+    10px 0,     /* chap tepani kesish */
+    100% 0,     /* yuqori o‘ng */
+    calc(100% - 10px) 100%, /* pastki o‘ng kesilgan joy */
+    0 100%      /* pastki chap */
+  );
 }
 .footer-text1{
     font-size: 17px;
@@ -98,6 +121,9 @@ footer{
 }
 
 @media(max-width: 600px) {
+    .footer .header-logo{
+        max-width: 138px;
+    }
     .footer{
         align-items: start;
         flex-direction: column;

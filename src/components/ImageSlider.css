@@ -1,0 +1,41 @@
+/* Rasm slideri uchun maxsus style */
+
+.img-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.img-wrapper::-webkit-scrollbar { display: none; }
+
+.img-card {
+  flex: 0 0 100%;
+  height: 100%;
+  scroll-snap-align: start;
+}
+.img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(255,255,255,0.8);
+  cursor: pointer;
+  font-size: 22px;
+  padding: 6px 10px;
+  border-radius: 50%;
+}
+.img-btn.left { left: 10px; }
+.img-btn.right { right: 10px; }
+
+@media (max-width: 600px) {
+  .img-btn { display: none; } /* Mobileda tugma yo‘q */
+}

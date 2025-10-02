@@ -24,7 +24,7 @@
     font-size: 32px;
     font-weight: 500;
     color: rgba(255, 255, 255, 1);
-    margin: 10px 0;
+    margin: 12px 0;
     font-family: "Tmedium",sans-serif;
 }
 .appform-left p{
@@ -78,17 +78,17 @@
     font-size: 32px;
     font-weight: 500;
     color: rgba(0, 0, 0, 1);
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 5px;
     font-family: "Tmedium",sans-serif;
 
 }
 
-.appform-right>   p{
+.appform-right-address{
     font-size: 17px;
     font-weight: 400;
     color: rgba(107, 114, 128, 1);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
    
 }
 .appform-right h3{
@@ -97,13 +97,13 @@
     line-height: 35px;
     color: rgba(55, 65, 81, 1);
 }
-.appform-right>div{
+.appform-right>div>div{
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
-.appform-right>div>p{
+.appform-right>div>div p{
     background-color: rgba(31, 41, 55, 1);
     padding:12px 20px;
     border-radius: 100px;
@@ -111,6 +111,17 @@
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
+}
+.app-form-tg a{
+     background-color: rgba(31, 41, 55, 1);
+    padding:12px 20px 12px 10px;
+    border-radius: 100px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    max-width: 140px;
+    margin-top: 14px;
 }
 .appform-right i{
     color: rgba(31, 41, 55, 1);
@@ -157,9 +168,12 @@
     .appform-right h3{
         font-size: 21px;
     }
-    .appform-right>div{
+    .appform-right>div, .appform-right>div>div{
         flex-direction: column;
         align-items: flex-start;
         gap: 0px;
+    }
+    .appform-right a{
+        margin-top: 0px;
     }
 }

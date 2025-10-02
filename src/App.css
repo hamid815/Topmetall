@@ -1,123 +1,119 @@
 @font-face {
   font-family: "FontOne";
-  src: url("./assets/fonts/helvetica-neue-5/HelveticaNeueRoman.otf") format("truetype");
+  src: url("./assets/fonts/helvetica-neue-5/HelveticaNeueRoman.otf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Tdemibold";
-  src: url("./assets/fonts/tt-hoves-pro-trial/TT\ Hoves\ Pro\ Trial\ DemiBold.ttf") format("truetype");
+  src: url("./assets/fonts/tt-hoves-pro-trial/TT\ Hoves\ Pro\ Trial\ DemiBold.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Tregular";
-  src: url("./assets/fonts/tt-hoves-pro-trial/TT\ Hoves\ Pro\ Trial\ Regular.ttf") format("truetype");
+  src: url("./assets/fonts/tt-hoves-pro-trial/TT\ Hoves\ Pro\ Trial\ Regular.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Tmedium";
-  src: url("./assets/fonts/tt-hoves-pro-trial/TT\ Hoves\ Pro\ Trial\ Medium.ttf") format("truetype");
+  src: url("./assets/fonts/tt-hoves-pro-trial/TT\ Hoves\ Pro\ Trial\ Medium.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 body {
   font-family: "Tmedium", sans-serif;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
-a{
+a {
   text-decoration: none;
   color: black;
 }
-.container{
+.container {
   max-width: 1350px;
   margin: 0 auto;
 }
-.dot{
+.dot {
   height: 10px;
   width: 10px;
   background-color: rgba(83, 106, 138, 1);
   display: inline-block;
   margin-right: 6px;
 }
-.app-content{
+.app-content {
   background-color: rgba(255, 255, 255, 1);
 }
 .gradient-text {
   margin: 90px 0;
   font-family: "Tdemibold", sans-serif;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 600;
-  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(103, 207, 255, 1));
-  background-clip: text;
-  -webkit-background-clip: text;   /* Chrome, Safari */
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(103, 207, 255, 1)); */
+  /* background-clip: text;
+  -webkit-background-clip: text;   
   color: transparent;
-  -webkit-text-fill-color: transparent; /* Safari */
+  -webkit-text-fill-color: transparent;  */
+  color: rgba(0, 0, 0, 1);
+  line-height: 58px;
 }
-.app-content>div{
+.app-content > div {
   display: flex;
   justify-content: space-between;
- margin-bottom: 40px;
+  margin-bottom: 40px;
 }
-.app-content .dot{
+.app-content .dot {
   height: 17px;
   width: 17px;
   flex-shrink: 0;
 }
-.app-content p{
+.app-content p {
   font-size: 18px;
   display: flex;
   align-items: center;
   font-family: "Tregular", sans-serif;
- 
 }
-.vniz{
-  margin: 30px auto;
-  font-size: 18px;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.vniz img{
-  max-width: 15px;
-}
-@media(max-width: 600px) {
+@media (max-width:1400px){
   .container{
-    
-    padding: 0 16px;
-
+    padding: 0 30px;
   }
-  .gradient-text{
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 14px;
+  }
+  .gradient-text {
     font-size: 20px;
     margin: 40px 0;
+    line-height: 31px;
   }
-  .app-content>div{
+  .app-content > div {
     display: block;
     flex-direction: column;
     gap: 25px;
   }
-  .app-content p{
+  .app-content p {
     font-size: 15px;
     margin-bottom: 15px;
-    
   }
-  .app-content .dot{
-  height: 13px;
-  width: 13px;
-  flex-shrink: 0;
+  .app-content .dot {
+    height: 13px;
+    width: 13px;
+    flex-shrink: 0;
+  }
+  .vniz {
+    display: none;
+  }
 }
-.vniz{
-  display: none;
-}
-}
-

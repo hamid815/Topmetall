@@ -14,6 +14,8 @@ const Footer = () => {
           <div>
             <img src={Tlogo} alt="" className="header-logo" />
             <div className="footer-layer"></div>
+            <div className="layer-footer"></div>
+
             <p className="footer-text1">{t("footer.company")}</p>
           </div>
 

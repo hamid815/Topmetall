@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import Sidebar from "./Sidebar"; // umumiy sidebar
 import Metal1 from "../assets/metal4.jpg";
 import Metal2 from "../assets/metal1.jpg";
-
+import { Link } from "react-router-dom";
 const Metalkostruksiya = () => {
   const { t } = useTranslation();
 
@@ -15,7 +15,8 @@ const Metalkostruksiya = () => {
       <Header />
       <div className="container">
         <h2 className="info-yul">
-          {t("info.back")} <p>→</p>{" "}
+          <Link to="/">{t("info.back")}</Link>
+           <p>→</p>{" "}
           <span>{t("info.metallokons.title")}</span>
         </h2>
         <div className="more-info">
@@ -24,7 +25,8 @@ const Metalkostruksiya = () => {
 
           <div className="info-content">
             <h2>
-              {t("info.back")} <p>→</p>{" "}
+          <Link to="/">{t("info.back")}</Link>
+               <p>→</p>{" "}
               <span>{t("info.metallokons.title")}</span>
             </h2>
 

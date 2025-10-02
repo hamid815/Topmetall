@@ -80,6 +80,17 @@ const Katprodukti = () => {
           </div>
 
           <div className="katalog-item">
+            <img src={Kt6} alt="" />
+            <div className="katalog-label"></div>
+            <div className="katalog-content">
+              <p>{t("katalog.items.item6")}</p>
+              <Link to="/koloniy">
+                <button>{t("katalog.open")}</button>
+              </Link>
+            </div>
+          </div>
+
+          <div className="katalog-item">
             <img src={Kt7} alt="" />
             <div className="katalog-label"></div>
             <div className="katalog-content">
@@ -89,24 +100,12 @@ const Katprodukti = () => {
               </Link>
             </div>
           </div>
-
           <div className="katalog-item">
             <img src={Kt8} alt="" />
             <div className="katalog-label"></div>
             <div className="katalog-content">
               <p>{t("katalog.items.item8")}</p>
               <Link to="/nestandartnoe">
-                <button>{t("katalog.open")}</button>
-              </Link>
-            </div>
-          </div>
-
-          <div className="katalog-item">
-            <img src={Kt6} alt="" />
-            <div className="katalog-label"></div>
-            <div className="katalog-content">
-              <p>{t("katalog.items.item6")}</p>
-              <Link to="/koloniy">
                 <button>{t("katalog.open")}</button>
               </Link>
             </div>

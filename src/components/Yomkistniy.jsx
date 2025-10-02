@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import Sidebar from "./Sidebar"; // umumiy sidebar
 import Yom1 from "../assets/c24d6d0dbcb8ef466141f4f1e27ee97cc50ff344.jpg";
 import Yom2 from "../assets/8ff679c4c39b7bc655808589eebe7d86779bc701.jpg";
-
+import { Link } from "react-router-dom";
 const Yomkostnoe = () => {
   const { t } = useTranslation();
 
@@ -15,8 +15,8 @@ const Yomkostnoe = () => {
       <Header />
       <div className="container">
         <h2 className="info-yul">
-          {t("info.back")} <p>→</p>{" "}
-          <span>{t("info.yomkostnoe.title")}</span>
+          <Link to="/">{t("info.back")}</Link>
+          <p>→</p> <span>{t("info.yomkostnoe.title")}</span>
         </h2>
         <div className="more-info">
           {/* umumiy sidebar, active="yomkostnoe" */}
@@ -24,8 +24,8 @@ const Yomkostnoe = () => {
 
           <div className="info-content">
             <h2>
-              {t("info.back")} <p>→</p>{" "}
-              <span>{t("info.yomkostnoe.title")}</span>
+              <Link to="/">{t("info.back")}</Link>
+              <p>→</p> <span>{t("info.yomkostnoe.title")}</span>
             </h2>
 
             <h1>{t("info.yomkostnoe.title")}</h1>

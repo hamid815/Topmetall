@@ -47,7 +47,7 @@
 .uni-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 20px;
 }
 
 .uni-card {
@@ -122,6 +122,12 @@
 
 /* Mobile */
 @media (max-width: 600px) {
+  .uni-img{
+    height: 228px;
+  }
+  .uni-img img{
+    height: 228px;
+  }
   .uni-btn{
     padding: 12px ;
     max-width: 140px;

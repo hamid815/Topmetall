@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import "../components/Appform.css";
 import { useTranslation } from "react-i18next";
@@ -8,7 +7,7 @@ const Appform = () => {
   const [phone, setPhone] = useState("");
   const { t } = useTranslation();
 
- const BOT_TOKEN = "8401399403:AAEYv3xfW0VeKepB4nTAtzz_t7RhRY-Kklw"; // BotFather bergan token
+  const BOT_TOKEN = "8401399403:AAEYv3xfW0VeKepB4nTAtzz_t7RhRY-Kklw"; // BotFather bergan token
   const CHAT_ID = "-1002930784916"; // o'zingiz yoki guruh ID
   const TELEGRAM_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
@@ -18,7 +17,9 @@ const Appform = () => {
       return;
     }
 
-    const message = `📩 ${t("appform.left.smallTitle")}:\n👤 ${t("appform.left.namePlaceholder")}: ${name}\n📞 ${t("appform.left.phonePlaceholder")}: ${phone}`;
+    const message = `📩 ${t("appform.left.smallTitle")}:\n👤 ${t(
+      "appform.left.namePlaceholder"
+    )}: ${name}\n📞 ${t("appform.left.phonePlaceholder")}: ${phone}`;
 
     try {
       await fetch(TELEGRAM_URL, {
@@ -71,14 +72,21 @@ const Appform = () => {
         <div className="appform-right">
           <h5>{t("appform.right.smallTitle")}</h5>
           <h2>{t("appform.right.bigTitle")}</h2>
-          <p>{t("appform.right.addressLabel")}</p>
+          <p className="appform-right-address">
+            {t("appform.right.addressLabel")}
+          </p>
           <h3>{t("appform.right.address")}</h3>
           <div>
+            <div>
+              <p>+998 90 989 00 08</p>
             <p>{t("appform.right.phone")}</p>
-              <p className="app-form-tg">
-            <a href="https://t.me/ruslan1863093">
-              <i className="bx bxl-telegram"></i> {t("appform.right.telegram")}
-            </a>
+
+            </div>
+            <p className="app-form-tg">
+              <a href="https://t.me/ruslan1863093">
+                <i className="bx bxl-telegram"></i>{" "}
+                {t("appform.right.telegram")}
+              </a>
             </p>
           </div>
         </div>

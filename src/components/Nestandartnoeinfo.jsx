@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import Sidebar from "./Sidebar"; // umumiy sidebar
 import Nes1 from "../assets/nestinfo1.jpg";
 import Nes2 from "../assets/nesinfo2.jpg";
-
+import { Link } from "react-router-dom";
 const Kolonniy = () => {
   const { t } = useTranslation();
 
@@ -15,7 +15,8 @@ const Kolonniy = () => {
       <Header />
       <div className="container">
         <h2 className="info-yul">
-          {t("info.back")} <p>→</p>{" "}
+          <Link to="/">{t("info.back")}</Link>
+           <p>→</p>{" "}
           <span>{t("info.nestandartnoe.title")}</span>
         </h2>
         <div className="more-info">
@@ -24,7 +25,8 @@ const Kolonniy = () => {
 
           <div className="info-content">
             <h2>
-              {t("info.back")} <p>→</p>{" "}
+          <Link to="/">{t("info.back")}</Link>
+               <p>→</p>{" "}
               <span>{t("info.nestandartnoe.title")}</span>
             </h2>
 

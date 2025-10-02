@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import Sidebar from "./Sidebar"; // umumiy sidebar
 import Sep1 from "../assets/sepiratori1.jpg";
 import Sep2 from "../assets/sepiratori2.jpg";
-
+import { Link } from "react-router-dom";
 const Sepiratori = () => {
   const { t } = useTranslation();
 
@@ -15,7 +15,8 @@ const Sepiratori = () => {
       <Header />
       <div className="container">
         <h2 className="info-yul">
-          {t("info.back")} <p>→</p>{" "}
+          <Link to="/">{t("info.back")}</Link>
+           <p>→</p>{" "}
           <span>{t("info.separatori.title")}</span>
         </h2>
         <div className="more-info">
@@ -24,7 +25,8 @@ const Sepiratori = () => {
 
           <div className="info-content">
             <h2>
-              {t("info.back")} <p>→</p>{" "}
+          <Link to="/">{t("info.back")}</Link>
+               <p>→</p>{" "}
               <span>{t("info.separatori.title")}</span>
             </h2>
 

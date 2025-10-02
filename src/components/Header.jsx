@@ -29,17 +29,17 @@ const Header = () => {
             <ul>
               <li>
                 <Link to="/">
-                  <div className="dot"></div> {t("nav.catalog")}
+                  <div className="dot dot-white"></div> {t("nav.catalog")}
                 </Link>
               </li>
               <li>
                 <Link to="/okompani">
-                  <div className="dot"></div> {t("nav.company")}
+                  <div className="dot dot-white"></div> {t("nav.company")}
                 </Link>
               </li>
               <li>
                 <Link to="/realproyekti">
-                  <div className="dot"></div> {t("nav.projects")}
+                  <div className="dot dot-white"></div> {t("nav.projects")}
                 </Link>
               </li>
             </ul>
@@ -93,6 +93,9 @@ const Header = () => {
             <div>
               <h4 className="hide-cont">
                 <i className="bx bxs-phone"></i> +998 90 186 30 93
+              </h4>
+              <h4 className="hide-cont">
+                <i className="bx bxs-phone"></i> +998 90 989 00 08
               </h4>
               <h4>{t("contact.email")}: topmetpro@gmail.com</h4>
             </div>

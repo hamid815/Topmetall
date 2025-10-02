@@ -31,7 +31,7 @@
     width: 330px;
     background: rgba(248, 248, 248, 1);
     border-radius: 8px;
-    height: fit-content;
+    /* height: fit-content; */
     cursor: pointer;
 }
 .sidebar>div{
@@ -44,7 +44,7 @@
 .sidebar>div>div{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 12px;
 }
 .activate-text{
@@ -68,7 +68,7 @@
     height: 85px;
      display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 12px;
 }
 .unactive{
@@ -78,13 +78,15 @@
     height: 85px;
      display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 12px;
 }
 .active-div{
     width: 4px;
     height: 40px;
     background-color: white;
+    flex-shrink: 0;
+
 }
 
 .info-content{
@@ -200,6 +202,11 @@
     font-weight: 400;
     gap: 10px;
     align-items: center;
+}
+.info-yul a, .info-content h2 a{
+    line-height: 24px;
+    color: rgba(55, 65, 81, 1);
+    font-weight: 400;
 }
 
 @media (max-width: 600px) {

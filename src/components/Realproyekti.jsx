@@ -10,7 +10,7 @@ import Kojuxotruvennoe from "./Kojuxotrubnie";
 import Trubnie from "./Trubnie";
 import Footer from "./Footer";
 import { useTranslation } from "react-i18next";
-
+import { Link } from "react-router-dom";
 const Realproyekti = () => {
   const { t } = useTranslation();
 
@@ -19,7 +19,8 @@ const Realproyekti = () => {
       <Header />
       <div className="container">
         <h3 className="okompani-yul">
-          {t("realproyekti.back")} <p>→</p>{" "}
+          <Link to="/">{t("realproyekti.back")}</Link>
+           <p>→</p>{" "}
           <h2>{t("realproyekti.companyInfo")}</h2>
         </h3>
       </div>
@@ -28,13 +29,13 @@ const Realproyekti = () => {
           <h1>{t("realproyekti.title")}</h1>
         </div>
       </div>
-      <Emkostnoy />
-      <Metallokons />
-      <Nestandartnoe />
-      <SeksIavo />
-      <Separatsionnoe />
       <Kojuxotruvennoe />
       <Trubnie />
+      <SeksIavo />
+      <Emkostnoy />
+      <Separatsionnoe />
+      <Nestandartnoe />
+      <Metallokons />
       <Footer />
     </div>
   );

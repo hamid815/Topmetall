@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import Sidebar from "./Sidebar"; // umumiy sidebar
 import Kol1 from "../assets/kolonniy1.png";
 import Kol2 from "../assets/kolonniy2.png";
-
+import { Link } from "react-router-dom";
 const Kolonniy = () => {
   const { t } = useTranslation();
 
@@ -15,8 +15,8 @@ const Kolonniy = () => {
       <Header />
       <div className="container">
         <h2 className="info-yul">
-          {t("info.back")} <p>→</p>{" "}
-          <span>{t("info.kolonniy.title")}</span>
+          <Link to="/">{t("info.back")}</Link>
+          <p>→</p> <span>{t("info.kolonniy.title")}</span>
         </h2>
         <div className="more-info">
           {/* umumiy sidebar, active="kolonniy" */}
@@ -24,8 +24,8 @@ const Kolonniy = () => {
 
           <div className="info-content">
             <h2>
-              {t("info.back")} <p>→</p>{" "}
-              <span>{t("info.kolonniy.title")}</span>
+              <Link to="/">{t("info.back")}</Link>
+              <p>→</p> <span>{t("info.kolonniy.title")}</span>
             </h2>
 
             <h1>{t("info.kolonniy.title")}</h1>

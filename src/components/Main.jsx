@@ -29,11 +29,7 @@ const Main = () => {
             </p>
           </div>
 
-          <div>
-            <h4 className="vniz">
-              {t("main.down")} <img src={Vniz} alt="" />
-            </h4>
-          </div>
+          
         </div>
       </div>
       <Katprodukti />

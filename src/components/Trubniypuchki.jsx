@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import Sidebar from "./Sidebar"; // umumiy sidebar
 import Tello1 from "../assets/trubniy1.jpg";
 import Tello2 from "../assets/trubniy2.jpg";
-
+import { Link } from "react-router-dom";
 const Trubniypuchki = () => {
   const { t } = useTranslation();
 
@@ -15,8 +15,8 @@ const Trubniypuchki = () => {
       <Header />
       <div className="container">
         <h2 className="info-yul">
-          {t("info.back")} <p>→</p>{" "}
-          <span>{t("info.trubnie.title")}</span>
+          <Link to="/">{t("info.back")}</Link>
+          <p>→</p> <span>{t("info.trubnie.title")}</span>
         </h2>
         <div className="more-info">
           {/* umumiy sidebar, auto-active */}
@@ -24,8 +24,8 @@ const Trubniypuchki = () => {
 
           <div className="info-content">
             <h2>
-              {t("info.back")} <p>→</p>{" "}
-              <span>{t("info.trubnie.title")}</span>
+              <Link to="/">{t("info.back")}</Link>
+              <p>→</p> <span>{t("info.trubnie.title")}</span>
             </h2>
 
             <h1>{t("info.trubnie.title")}</h1>
