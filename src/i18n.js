@@ -570,9 +570,9 @@ PRO" за своевременную поставку качественного
         katalog: {
           title: "Product Catalog",
           items: {
-            item1: "Shell and tube heat exchangers",
-            item2: "Tube bundles and tube sheets",
-            item3: "Air-cooling units sections",
+            item1: "Heat exchangers",
+            item2: "Tube bundles",
+            item3: "Air cooling aparatus section",
             item4: "Storage equipment",
             item5: "Separation equipment",
             item6: "Column equipment",

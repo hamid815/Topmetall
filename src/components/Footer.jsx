@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="footer-layer"></div>
             <div className="layer-footer"></div>
 
-            <p className="footer-text1">{t("footer.company")}</p>
+            {/* <p className="footer-text1">{t("footer.company")}</p> */}
           </div>
 
           <div className="footer-section">
