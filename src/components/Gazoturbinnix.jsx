@@ -21,7 +21,7 @@ const Gazoturbinnix = () => {
         </h2>
         <div className="more-info">
           {/* umumiy sidebar, active="metallokons" */}
-          <Sidebar active="metallokons" />
+          <Sidebar active="gazoturbinnix" />
 
           <div className="info-content">
             <h2>
@@ -44,14 +44,7 @@ const Gazoturbinnix = () => {
             <p>{t("info.gazoturbinnix.description")}</p>
 
             <h3>{t("info.gazoturbinnix.production.title")}</h3>
-            {/* {t("info.metallokons.production.items", { returnObjects: true }).map(
-              (item, idx) => (
-                <h4 key={idx}>
-                  <div className="dot"></div>
-                  {item.label}: <span>{item.value}</span>
-                </h4>
-              )
-            )} */}
+            
 
             <div className="info-grid-colum">
               {t("info.gazoturbinnix.production.extra", { returnObjects: true }).map(
