@@ -13,6 +13,7 @@ import Sepiratori from "./components/Sepiratori";
 import Kolonniy from "./components/Kolonniy";
 import Metalkostruksiya from "./components/Metalkonstruksiya";
 import Nestandartnoe from "./components/Nestandartnoeinfo";
+import Gazoturbinnix from "./components/Gazoturbinnix";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -57,6 +58,8 @@ function App() {
           <Route path="/koloniy" element={<Kolonniy/>}/>
           <Route path="/metalkonstruksiya" element={<Metalkostruksiya/>}/>
           <Route path="/nestandartnoe" element={<Nestandartnoe/>}/>
+          <Route path="/gazoturbinnix" element={<Gazoturbinnix/>}/>
+
 
           
 

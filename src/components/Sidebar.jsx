@@ -14,6 +14,8 @@ const Sidebar = () => {
     { path: "/koloniy", label: t("info.sidebar.kolonniy") },
     { path: "/nestandartnoe", label: t("info.sidebar.nestandartnoe") },
     { path: "/metalkonstruksiya", label: t("info.sidebar.metallokons") },
+    { path: "/gazoturbinnix", label: t("info.sidebar.gazoturbinnix") },
+
   ];
 
   return (

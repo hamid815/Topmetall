@@ -9,6 +9,8 @@ import Kt5 from "../assets/kt5.jpg";
 import Kt6 from "../assets/kt6.jpg";
 import Kt7 from "../assets/kt7.jpg";
 import Kt8 from "../assets/kt8.jpg";
+import Kt9 from "../assets/kt9.jpg";
+
 import { useTranslation } from "react-i18next";
 
 const Katprodukti = () => {
@@ -106,6 +108,16 @@ const Katprodukti = () => {
             <div className="katalog-content">
               <p>{t("katalog.items.item8")}</p>
               <Link to="/nestandartnoe">
+                <button>{t("katalog.open")}</button>
+              </Link>
+            </div>
+          </div>
+          <div className="katalog-item">
+            <img src={Kt9} alt="" />
+            <div className="katalog-label"></div>
+            <div className="katalog-content">
+              <p>{t("katalog.items.item9")}</p>
+              <Link to="/gazoturbinnix">
                 <button>{t("katalog.open")}</button>
               </Link>
             </div>

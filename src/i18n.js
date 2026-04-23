@@ -34,6 +34,7 @@ i18n.use(initReactI18next).init({
             item6: "Колонное оборудование",
             item7: "Металлоконструкции",
             item8: "Нестандартное оборудование",
+            item9: "Ремонт газотурбинных двигателей",
           },
           open: "Открыть",
         },
@@ -319,6 +320,8 @@ PRO" за своевременную поставку качественного
             metallokons: "Металлоконструкции",
             nestandartnoe: "Нестандартное оборудование",
             kolonniy: "Колонное оборудование",
+            gazoturbinnix: "Ремонт газотурбинных двигателей",
+
           },
           back: "Вернуться на главную страницу",
           telloobmenniki: {
@@ -509,6 +512,34 @@ PRO" за своевременную поставку качественного
               ],
             },
           },
+          gazoturbinnix: {
+            title: "Капитальный ремонт газотурбинных двигателей НК-12СТ, НК-14СТ, НК-16СТ",
+            alt1: "Теплообменники кожухотрубчатые",
+            alt2: "Металлоконструкция 2",
+            description:
+              "Капитальный ремонт газотурбинных двигателей НК-12СТ, НК-14СТ, НК-16СТ Мы предоставляем полный комплекс услуг по капитальному ремонту газотурбинных двигателей серий НК-12СТ, НК-14СТ и НК-16СТ с гарантией качества и соблюдением всех технических стандартов.",
+            production: {
+              title: "Наши специалисты выполняют:",
+              // items: [
+              //   { label: "Обработка металла", value: "до 100 мм" },
+              //   { label: "Масса единичных конструкций", value: "до 50 тн" },
+              // ],
+              extra: [
+                "Полную диагностику и дефектацию узлов",
+                "Разборку, очистку и восстановление деталей",
+                "Балансировку и точную настройку агрегатов",
+                "Сборку и испытания двигателя на стенде",
+              ],
+            },
+            tech: {
+              title: "Ключевые преимущества обслуживания",
+              items: [
+                "Hаличие обменного фонда двигателей и запасных частей к ним",
+                "Bозможность сократить сроки капитального ремонта оборудования при обмене двигателей",
+                "Bозможность оценки состояния двигателей на месте их эксплуатации и организация помощи при демонтаже оборудования",
+              ],
+            },
+          },
           nestandartnoe: {
             title: "Нестандартное оборудование",
             alt1: "Нестандартное оборудование 1",
@@ -578,6 +609,7 @@ PRO" за своевременную поставку качественного
             item6: "Column equipment",
             item7: "Metal structures",
             item8: "Non-standard equipment",
+            item9: "Repair of gas turbine engines",
           },
           open: "Open",
         },
@@ -848,6 +880,8 @@ with qualified personnel.`,
             metallokons: "Metal structures",
             nestandartnoe: "Non-standard equipment",
             kolonniy: "Column equipment",
+            gazoturbinnix: "Repair of gas turbine engines",
+
           },
           back: "Back to the main page",
           telloobmenniki: {
@@ -1029,6 +1063,34 @@ with qualified personnel.`,
                 "Bending on modern equipment",
                 "Welding in protective gas environment",
                 "Mechanical processing on CNC machines",
+              ],
+            },
+          },
+          gazoturbinnix: {
+            title: "Overhaul of gas turbine engines NK-12ST, NK-14ST, NK-16ST",
+            alt1: "Shell and tube heat exchangers",
+            alt2: "Metal structure 2",
+            description:
+              "Overhaul of NK-12ST, NK-14ST, and NK-16ST gas turbine engines. We provide a full range of services for the overhaul of NK-12ST, NK-14ST, and NK-16ST series gas turbine engines, with a quality guarantee and compliance with all technical standards.",
+            production: {
+              title: "Our specialists perform:",
+              // items: [
+              //   { label: "Metal processing", value: "up to 100 mm" },
+              //   { label: "Single structure weight", value: "up to 50 t" },
+              // ],
+              extra: [
+                "Complete diagnostics and defect detection of units",
+                "Disassembly, cleaning and restoration of parts",
+                "Balancing and fine-tuning of units",
+                "Assembly and testing of the engine on the stand",
+              ],
+            },
+            tech: {
+              title: "Key benefits of the service",
+              items: [
+                "Availability of exchange stock of engines and spare parts for them",
+                "Possibility to reduce the time of major equipment repairs when exchanging engines",
+                "Possibility of assessing the condition of engines at the place of their operation and organizing assistance during equipment dismantling",
               ],
             },
           },
