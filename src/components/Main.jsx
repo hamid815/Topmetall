@@ -1,6 +1,5 @@
 import React from "react";
 import "boxicons/css/boxicons.min.css";
-import Vniz from "../assets/vniz.png";
 import Header from "./Header";
 import Katprodukti from "./Katprodukti";
 import Appform from "./Appform";
