@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import "./Teliobenniki.css";
 import { useTranslation } from "react-i18next";
-import Sidebar from "./Sidebar"; // umumiy sidebar
+import Sidebar from "./Sidebar"; 
 import Metal1 from "../assets/kt9.jpg";
 import Metal2 from "../assets/kt10.png";
 import { Link } from "react-router-dom";
