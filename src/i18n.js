@@ -514,7 +514,7 @@ PRO" за своевременную поставку качественного
           },
           gazoturbinnix: {
             title: "Капитальный ремонт газотурбинных двигателей НК-12СТ, НК-14СТ, НК-16СТ",
-            alt1: "Теплообменники кожухотрубчатые",
+            alt1: "Ремонт газотурубнных двигателей",
             alt2: "Металлоконструкция 2",
             description:
               "Капитальный ремонт газотурбинных двигателей НК-12СТ, НК-14СТ, НК-16СТ Мы предоставляем полный комплекс услуг по капитальному ремонту газотурбинных двигателей серий НК-12СТ, НК-14СТ и НК-16СТ с гарантией качества и соблюдением всех технических стандартов.",
@@ -1068,7 +1068,7 @@ with qualified personnel.`,
           },
           gazoturbinnix: {
             title: "Overhaul of gas turbine engines NK-12ST, NK-14ST, NK-16ST",
-            alt1: "Shell and tube heat exchangers",
+            alt1: "Repair of gas-turbine engines",
             alt2: "Metal structure 2",
             description:
               "Overhaul of NK-12ST, NK-14ST, and NK-16ST gas turbine engines. We provide a full range of services for the overhaul of NK-12ST, NK-14ST, and NK-16ST series gas turbine engines, with a quality guarantee and compliance with all technical standards.",
